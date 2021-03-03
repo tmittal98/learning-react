@@ -13,7 +13,7 @@ function Help(props){
     },[props.name])
 
     return(
-        <div>
+        <div className="help">
             <h1>Help Component</h1>
             <h2> {props.name}</h2>
         </div>

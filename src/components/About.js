@@ -25,7 +25,7 @@ class About extends React.Component{
     render(){
         console.warn("render");
         return(
-            <div>
+            <div className="about-us">
                 <h1>About Us Component</h1>
                 <h2>{this.state.name}</h2>
                 <h2>{this.state.age}</h2>

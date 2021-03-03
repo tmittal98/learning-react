@@ -4,13 +4,15 @@ import Contact from './components/Contact'
 import Career from './components/Career'
 import Help from './components/Help'
 import Service from './components/Service'
-
+import Home from './components/Home'
+import './App.css'
 function App() {
 
   const [name,setName] = useState('Tushar')
 
   return (
     <div>
+      <Home />
       <About />
       <Contact />
       <Career />

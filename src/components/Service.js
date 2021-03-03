@@ -19,7 +19,7 @@ class Service extends React.Component{
     }
     render(){
         return(
-            <div>
+            <div className="service">
                 <h1>Service Component</h1>
                 <h2>{this.props.name}</h2>
             </div>

@@ -15,7 +15,7 @@ function Career(){
     },[age])
 
     return(
-        <div>
+        <div className="career">
             <h1>Career Page Component</h1>
             <h2>{name}</h2>
             <h2>{age}</h2>

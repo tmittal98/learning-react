@@ -1,0 +1,41 @@
+div{
+    border: 2px solid black;
+    margin: 10px;
+}
+
+.about-us{
+    background-color: rgb(153, 109, 253);
+    text-align: center;
+    padding: 10px;
+}
+
+.home{
+    background-color: rgb(153, 109, 253);
+    text-align: center;
+    padding: 10px;
+}
+.company{
+    background-color: rgb(153, 109, 253);
+    text-align: center;
+    padding: 10px;
+}
+.contact{
+    background-color: rgb(153, 109, 253);
+    text-align: center;
+    padding: 10px;
+}
+.service{
+    background-color: rgb(153, 109, 253);
+    text-align: center;
+    padding: 10px;
+}
+.career{
+    background-color: rgb(153, 109, 253);
+    text-align: center;
+    padding: 10px;
+}
+.help{
+    background-color: rgb(153, 109, 253);
+    text-align: center;
+    padding: 10px;
+}

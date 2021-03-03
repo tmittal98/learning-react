@@ -6,7 +6,7 @@ function Contact(){
   //Allows to write JS and HTML togrther
   let data = "Contact Us Component"
     return(
-        <div>
+        <div className="contact">
             <h1>{data}</h1>
         </div>
     )
