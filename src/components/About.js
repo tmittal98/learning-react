@@ -23,6 +23,7 @@ class About extends React.Component{
     }
 
     render(){
+        console.warn("render");
         return(
             <div>
                 <h1>About Us Component</h1>
