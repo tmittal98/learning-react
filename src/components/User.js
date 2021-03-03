@@ -1,7 +1,7 @@
 /* eslint-disable array-callback-return */
 /* eslint-disable no-unused-vars */
 //listing and conditions
-import React,{useState, useEffect} from 'react'
+import React,{useState, useEffect,Fragment} from 'react'
 
 function User(){
 
@@ -14,7 +14,7 @@ function User(){
     ])
 
     return(
-        <>
+        <Fragment>
             <h1>Users</h1>
             {
                 // user.map((item,key)=>
@@ -30,7 +30,7 @@ function User(){
                 // <div>Yes,this is right</div>:<div>No, length should be 5</div>
 
             }
-        </>
+        </Fragment>
     )
 }
 export default User
