@@ -1,4 +1,6 @@
 /* eslint-disable no-unused-vars */
+//events and functions
+//listing
 import React,{useState}from 'react'
 
 function Company(){

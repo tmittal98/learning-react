@@ -7,6 +7,7 @@ import Help from './components/Help'
 import Service from './components/Service'
 import Home from './components/Home'
 import Company from './components/Company'
+import User from './components/User'
 import './App.css'
 
 function App() {
@@ -15,7 +16,8 @@ function App() {
 
   return (
     <div>
-      <Company />
+      <User />
+      {/* <Company /> */}
       {/* <Home />
       <About />
       <Contact />
