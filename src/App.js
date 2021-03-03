@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
-import React,{useState}from 'react'
+import React, { useState } from 'react'
+// import { F } from 'react-bootstrap'
 import About from './components/About'
 import Contact from './components/Contact'
 import Career from './components/Career'
@@ -8,15 +9,16 @@ import Service from './components/Service'
 import Home from './components/Home'
 import Company from './components/Company'
 import User from './components/User'
+import CreateUser from './components/CreateUser'
 import './App.css'
 
 function App() {
 
-  const [name,setName] = useState('Tushar')
+  const [name, setName] = useState('Tushar')
 
   return (
     <div>
-      <User />
+      <CreateUser />
       {/* <Company /> */}
       {/* <Home />
       <About />
