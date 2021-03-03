@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React,{useState}from 'react'
 import About from './components/About'
 import Contact from './components/Contact'
@@ -5,14 +6,17 @@ import Career from './components/Career'
 import Help from './components/Help'
 import Service from './components/Service'
 import Home from './components/Home'
+import Company from './components/Company'
 import './App.css'
+
 function App() {
 
   const [name,setName] = useState('Tushar')
 
   return (
     <div>
-      <Home />
+      <Company />
+      {/* <Home />
       <About />
       <Contact />
       <Career />
@@ -22,7 +26,7 @@ function App() {
         setName("Tushar Mittal")
       }}>
         Update Name
-      </button>
+      </button> */}
     </div>
   )
 }
