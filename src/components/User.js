@@ -1,18 +1,22 @@
 /* eslint-disable array-callback-return */
 /* eslint-disable no-unused-vars */
 //listing and conditions
+
+//api is called when the component is loaded
 import React, { useState, useEffect, Fragment } from 'react'
 import { Button, Table } from 'react-bootstrap'
 function User() {
 
-    const [user, setUser] = useState([
-        { name: "tushar", age: '26', address: 'noida' },
-        { name: "nikhil", age: '21' },
-        { name: "parag", age: '23' },
-        { name: "suhail", age: '25' },
-        { name: "bunty", age: '22' }
-    ])
+    const [user, setUser] = useState([])
 
+    useEffect(() => {
+        fetch("http://dummy.restapiexample.com/api/v1/employees").then((data) => {
+            data.json().then(result => {
+                console.warn(result);
+                setUser(result.data)
+            })
+        })
+    }, [])
     return (
         <Fragment>
             <h1>Users</h1>
@@ -42,18 +46,18 @@ function User() {
                     <tr>
                         <th>#</th>
                         <th>Name</th>
+                        <th>Salary</th>
                         <th>Age</th>
-                        <th>Address</th>
                     </tr>
                 </thead>
                 <tbody>
                     {
                         user.map((item, index) =>
                             <tr key={index}>
-                                <td>{index + 1}</td>
-                                <td>{item.name}</td>
-                                <td>{item.age}</td>
-                                <td>{item.address}</td>
+                                <td>{item.id}</td>
+                                <td>{item.employee_name}</td>
+                                <td>{item.employee_salary}</td>
+                                <td>{item.employee_age}</td>
                             </tr>
                         )
                     }
